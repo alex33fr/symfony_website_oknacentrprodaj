@@ -2,16 +2,55 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77b96d13-076d-4dc7-8e50-d0737aea8ea7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/symfony_website_oknacentrprodaj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_website_oknacentrprodaj.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MainCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SubCategoryController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/MainCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/SubCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/MainCategoryType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ProductType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/SubCategoryType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200320115831.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200320120302.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/MainCategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/SubCategoryRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/Authenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main_category/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main_category/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main_category/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main_category/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main_category/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/main_category/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/product/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/product/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/product/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/product/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/product/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sub_category/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sub_category/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sub_category/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sub_category/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sub_category/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/sub_category/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable path="composer" />
@@ -28,7 +67,44 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="symfony@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="symfony@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="symfony@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="symfony: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="symfony@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="symfony: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="main_category: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="symfony@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="symfony: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="product: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="symfony@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="symfony: schema" type="ebfa3cd1:MariaImplModel$Schema" />
+        <item name="sub_category: table" type="dbc44a63:MariaImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="Git.Settings">
@@ -158,17 +234,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj\vendor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -182,6 +259,12 @@
       <option name="presentableId" value="Default" />
       <updated>1584488791771</updated>
       <workItem from="1584488793879" duration="4493000" />
+      <workItem from="1584634405222" duration="1396000" />
+      <workItem from="1584650241213" duration="14000" />
+      <workItem from="1584650277797" duration="219000" />
+      <workItem from="1584650764437" duration="2280000" />
+      <workItem from="1584704239294" duration="4879000" />
+      <workItem from="1584725377699" duration="5989000" />
     </task>
     <servers />
   </component>
@@ -192,9 +275,25 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584705597693">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1584705597693" />
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584650253094">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1584650253094" />
     <state x="736" y="433" key="ComposerInitDialogKey" timestamp="1584490983713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="736" y="433" key="ComposerInitDialogKey/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1584490983713" />
+    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1584705572166">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1584705572166" />
+    <state x="701" y="153" key="refactoring.ChangeSignatureDialog" timestamp="1584801581653">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="701" y="153" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1584801581653" />
   </component>
 </project>
