@@ -17,7 +17,7 @@ class ProductType extends AbstractType
             ->add('color')
             ->add('descOne')
             ->add('descTwo')
-            ->add('createdAt')
+            ->add('mainCategories')
             ->add('subCategory')
         ;
     }

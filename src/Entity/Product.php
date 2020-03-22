@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -47,10 +48,20 @@ class Product
     private $createdAt;
 
     /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\MainCategory", inversedBy="subcategory")
+     */
+    private $mainCategories;
+
+    /**
      * @ORM\ManyToOne(targetEntity="App\Entity\SubCategory", inversedBy="products")
      */
     private $subCategory;
 
+    public function __construct()
+    {
+        $this->products = new ArrayCollection();
+        $this->createdAt = new \DateTime();
+    }
     public function getId(): ?int
     {
         return $this->id;
@@ -128,6 +139,18 @@ class Product
         return $this;
     }
 
+    public function getMainCategories(): ?MainCategory
+    {
+        return $this->mainCategories;
+    }
+
+    public function setMainCategories(?MainCategory $mainCategories): self
+    {
+        $this->mainCategories = $mainCategories;
+
+        return $this;
+    }
+
     public function getSubCategory(): ?SubCategory
     {
         return $this->subCategory;
@@ -139,4 +162,6 @@ class Product
 
         return $this;
     }
+
+
 }

@@ -36,6 +36,7 @@ class MainCategory
     public function __construct()
     {
         $this->subcategory = new ArrayCollection();
+        $this->createdAt = new \DateTime();
     }
 
     /**

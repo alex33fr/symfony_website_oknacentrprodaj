@@ -13,7 +13,6 @@ class MainCategoryType extends AbstractType
     {
         $builder
             ->add('title')
-            ->add('createdAt')
         ;
     }
 

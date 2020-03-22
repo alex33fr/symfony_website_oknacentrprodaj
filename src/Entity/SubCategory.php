@@ -41,11 +41,12 @@ class SubCategory
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\MainCategory", inversedBy="subcategory")
      */
-    private $subcategories;
+    private $mainCategory;
 
     public function __construct()
     {
         $this->products = new ArrayCollection();
+        $this->createdAt = new \DateTime();
     }
 
     /**
@@ -129,14 +130,14 @@ class SubCategory
         return $this;
     }
 
-    public function getSubcategories(): ?MainCategory
+    public function getMainCategory(): ?MainCategory
     {
-        return $this->subcategories;
+        return $this->mainCategory;
     }
 
-    public function setSubcategories(?MainCategory $subcategories): self
+    public function setMainCategory(?MainCategory $mainCategory): self
     {
-        $this->subcategories = $subcategories;
+        $this->mainCategory = $mainCategory;
 
         return $this;
     }

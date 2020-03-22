@@ -2,7 +2,6 @@
 
 namespace App\Form;
 
-use App\Entity\MainCategory;
 use App\Entity\SubCategory;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
@@ -16,8 +15,7 @@ class SubCategoryType extends AbstractType
         $builder
             ->add('title')
             ->add('description')
-            ->add('createdAt')
-            ->add('subcategories')
+            ->add('mainCategory')
         ;
     }
 
