@@ -1,0 +1,44 @@
+{% extends '/base.html.twig' %}
+
+{% block title %}Продукт {{ product.title }}{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="text-center mt-3 mb-3">Продукт {{ product.title }}</h1>
+        <img class="img-thumbnail rounded mx-auto d-block mb-5" {# src="{{ vich_uploader_asset(product, 'imageFile')}}" alt="{{ product.imageName }}" #}  width="500px" height="300px">
+        <table class="table">
+            <tbody>
+            <tr>
+                <th>Название</th>
+                <td>{{ product.title }}</td>
+            </tr>
+            <tr>
+                <th>Модель</th>
+                <td>{{ product.model }}</td>
+            </tr>
+            <tr>
+                <th>Цвет</th>
+                <td>{{ product.color }}</td>
+            </tr>
+            <tr>
+                <th>Краткое описание</th>
+                <td>{{ product.descOne }}</td>
+            </tr>
+            <tr>
+                <th>Основное описание</th>
+                <td>{{ product.descTwo }}</td>
+            </tr>
+            {% if is_granted('ROLE_ADMIN') %}
+                <tr>
+                    <th>Дата создания</th>
+                    <td>{{ product.createdAt ? product.createdAt|date('d-m-Y H:i') : '' }}</td>
+                </tr>
+            {% endif %}
+            </tbody>
+        </table>
+        {% if is_granted('ROLE_ADMIN') %}
+            <a href="{{ path('product_edit', {'id': product.id}) }}" class="btn mt-2 mb-2 btn btn-warning">Изменить</a>
+            {{ include('product/_delete_form.html.twig') }}
+        {% endif %}
+    </div>
+{% endblock %}
