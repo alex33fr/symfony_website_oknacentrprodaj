@@ -27,7 +27,21 @@
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
 </head>
-
+{% if is_granted('ROLE_ADMIN') %}
+    <nav class="navbar navbar-dark bg-dark justify-content-end">
+        <ul class="nav font-weight-lighter">
+            <li class="nav-item list-unstyled">
+                <a class="nav-link text-white" href="#">Панель управления</a>
+            </li>
+            <li class="nav-item list-unstyled">
+                <a class="nav-link text-white" href="#">Регистрация</a>
+            </li>
+            <li class="nav-item list-unstyled">
+                <a class="nav-link text-white" href="{{ path('app_logout') }}">Выйти</a>
+            </li>
+        </ul>
+    </nav>
+{% endif %}
 <!-- HEADER NAVBAR -->
 <div class="container">
     <div class="row mt-2 mb-2">
@@ -51,42 +65,39 @@
 <!-- BRAND -->
 <nav class="navbar navbar-default navbar-expand-lg bg-danger">
     <a class="navbar-brand ml-5" href="{{ path('home') }}">
-        <img src="" width="300" height="101"
+        <img src="{{ asset('images/logotype.png') }}" width="300" height="101"
              alt="Логотип Окна Центр Продаж">
     </a>
 </nav>
-<nav class="navbar pb-2 pt-2 sticky-top navbar-expand bg-white justify-content-center shadow-sm">
-    <ul class="nav font-weight-bold text-uppercase">
-        {% if is_granted('ROLE_ADMIN') %}
-            <li class="nav-item">
-                <a class="nav-link text-dark active" href="">Админка</a>
+<nav class="navbar pb-2 pt-2 sticky-top navbar-expand-lg bg-white justify-content-center shadow-sm">
+    <div>
+        <ul class="nav font-weight-bold text-uppercase">
+            <li class="nav-item active">
+                <a class="nav-link text-dark" href="{{ path('mainCategory_show', {'title': 'окна'}) }}">ОКНА</a>
             </li>
-        {% endif %}
-        <li class="nav-item">
-            <a class="nav-link text-dark active" href="">ОКНА</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark active" href="">БАЛКОНЫ</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark active" href="">ДВЕРИ</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark active" href="">ПОТОЛКИ</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark active" href="">РОЛЬСТАВНИ</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark active" href="">ЖАЛЮЗИ</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark active" href="">ВОРОТА</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link text-dark active" href="">СТЕЛЛАЖИ</a>
-        </li>
-    </ul>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="{{ path('mainCategory_show', {'title': 'балконы'}) }}">БАЛКОНЫ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="{{ path('mainCategory_show', {'title': 'двери'}) }}">ДВЕРИ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="">ПОТОЛКИ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="">РОЛЬСТАВНИ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="">ЖАЛЮЗИ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="">ВОРОТА</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark active" href="">СТЕЛЛАЖИ</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 <body>
 {% block body %}
@@ -126,11 +137,6 @@
                         <li>
                             <p>
                                 <a href="{{ path('app_login') }}">Войти</a>
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                <a href="{{ path('app_register') }}">Регистрация</a>
                             </p>
                         </li>
                     </ul>

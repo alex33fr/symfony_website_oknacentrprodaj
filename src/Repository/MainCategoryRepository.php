@@ -5,6 +5,7 @@ namespace App\Repository;
 use App\Entity\MainCategory;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Common\Persistence\ManagerRegistry;
+use Doctrine\ORM\NonUniqueResultException;
 
 /**
  * @method MainCategory|null find($id, $lockMode = null, $lockVersion = null)
@@ -17,6 +18,37 @@ class MainCategoryRepository extends ServiceEntityRepository
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, MainCategory::class);
+    }
+
+    /**
+     * @param $value
+     * @return MainCategory|null Returns an array of MainCategory objects
+     */
+    public function findByCategory($value)
+    {
+        return $this->createQueryBuilder('m')
+            ->Where('m.id = :val')
+            ->setParameter('val', $value)
+            ->setMaxResults(100)
+            ->getQuery()
+            ->getResult()
+            ;
+    }
+
+    /**
+     * @param $value
+     * @return MainCategory|null Returns an array of MainCategory objects
+     * @throws NonUniqueResultException
+     */
+    public function findTitleByCategory($value)
+    {
+        return $this->createQueryBuilder('m')
+            ->Where('m.id = :val')
+            ->setParameter('val', $value)
+            ->setMaxResults(100)
+            ->getQuery()
+            ->getOneOrNullResult()
+            ;
     }
 
     // /**

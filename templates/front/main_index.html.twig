@@ -1,0 +1,126 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}MainCategory index{% endblock %}
+
+{% block body %}
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h1 class="my-4 text-center">{{ main_category_title.title }}</h1>
+                <div class="list-group">
+                    {% for sub_category in sub_category %}
+                        <tr>
+                            <td><a class="list-group-item text-dark" href="{{ path('sub_category_show', {'id': sub_category.id}) }}">{{ sub_category.title }}</a></td>
+                        </tr>
+                    {% else %}
+                        <tr>
+                            <td colspan="5">Категории отсутствуют или не созданны</td>
+                        </tr>
+                    {% endfor %}
+                </div>
+            </div>
+            <!-- /.col-lg-3 -->
+            <div class="col-lg-9 mt-5">
+                <div class="row">
+                    {% for product in product  %}
+                        <div class="col-lg-6 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="{{ path('product_show', {'id': product.id}) }}"><img class="card-img-top" src="{{ vich_uploader_asset(product, 'imageFile') | imagine_filter('test')}}" alt="{{ product.imageName }}"></a>
+                                <div class="card-body">
+                                    <h4 class="card-title text-center">
+                                        <a href="{{ path('product_show', {'id': product.id}) }}">{{ product.title }}</a>
+                                    </h4>
+                                    <h5></h5>
+                                    <p class="card-text">{{ product.descOne | u.truncate(200, ' ... ') }}
+                                    </p>
+                                    <div>
+                                        <a class="btn btn-outline-danger btn-block" href="{{ path('product_show', {'id': product.id}) }}">Узнать больше</a>
+                                    </div>
+                                </div>
+                                <div class="card-footer text-center">
+                                    <small class="text-muted">{{ product.createdAt |date('d-m-Y')}}</small>
+                                </div>
+                            </div>
+                        </div>
+                    {%  endfor %}
+                <!-- /.row -->
+            </div>
+            <!-- /.col-lg-9 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <h1>MainCategory index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>CreatedAt</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for main_category in main_category %}
+            <tr>
+                <td>{{ main_category.id }}</td>
+                <td>{{ main_category.title }}</td>
+                <td>{{ main_category.createdAt ? main_category.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('main_category_show', {'id': main_category.id}) }}">show</a>
+                    <a href="{{ path('main_category_edit', {'id': main_category.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('main_category_new') }}">Create new</a>
+
+    <h1>Product index</h1>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Model</th>
+            <th>Color</th>
+            <th>DescOne</th>
+            <th>DescTwo</th>
+            <th>CreatedAt</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for product in product %}
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>{{ product.title }}</td>
+                <td>{{ product.model }}</td>
+                <td>{{ product.color }}</td>
+                <td>{{ product.descOne }}</td>
+                <td>{{ product.descTwo }}</td>
+                <td>{{ product.createdAt ? product.createdAt|date('Y-m-d H:i:s') : '' }}</td>
+                <td>
+                    <a href="{{ path('product_show', {'id': product.id}) }}">show</a>
+                    <a href="{{ path('product_edit', {'id': product.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="8">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('product_new') }}">Create new</a>
+{% endblock %}

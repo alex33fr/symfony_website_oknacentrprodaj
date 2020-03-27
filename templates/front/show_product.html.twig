@@ -5,7 +5,7 @@
 {% block body %}
     <div class="container">
         <h1 class="text-center mt-3 mb-3">Продукт {{ product.title }}</h1>
-        <img class="img-thumbnail rounded mx-auto d-block mb-5" {# src="{{ vich_uploader_asset(product, 'imageFile')}}" alt="{{ product.imageName }}" #}  width="500px" height="300px">
+        <img class="img-thumbnail rounded mx-auto d-block mb-5" src="{{ vich_uploader_asset(product, 'imageFile')}}" alt="{{ product.imageName }}"  width="500px" height="300px">
         <table class="table">
             <tbody>
             <tr>
