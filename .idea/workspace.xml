@@ -2,52 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="77b96d13-076d-4dc7-8e50-d0737aea8ea7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Where('m.сategory" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/createQueryBuilder('m')" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getQuery()" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/getResult()" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/orderBy('m.id'" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/font/Montserrat_ru.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/backgraund.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icon/gps.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icon/location.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icon/oknacentrprodaj-icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icon/support.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/icon/telephone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/logotype.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/products/5e3ef6cf3a88e613387653-5e7d276eb9c02228082959.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/products/5e3ef6cf3a88e613387653-5e7d8c56b181d717118202.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/products/website-structure-5e7b9b2041a35649951638.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/sliders/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setMaxResults(100)" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setParameter('val'" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200325174913.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/main_index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/show_list_products.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/front/show_sub_category.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/check.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/symfony_website_oknacentrprodaj.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/symfony_website_oknacentrprodaj.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FrontController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FrontController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/ProductType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ProductType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/MainCategoryRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MainCategoryRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/ProductRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ProductRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/front/show_product.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/front/show_product.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,6 +172,8 @@
       <path value="$PROJECT_DIR$/vendor/twig/string-extra" />
       <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
       <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/symfony/requirements-checker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/apache-pack" />
     </include_path>
   </component>
   <component name="ProjectId" id="1ZHGpudP28cC5b2R4DkGVbA5npE" />
@@ -225,18 +191,18 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/front" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj\assets\css" />
-      <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj\templates\front" />
       <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj\assets\css" />
       <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj\public" />
       <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj\vendor" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj\assets\css" />
+      <recent name="C:\Users\Alex\Desktop\symfony_website_oknacentrprodaj" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -264,7 +230,9 @@
       <workItem from="1585250487715" duration="306000" />
       <workItem from="1585250802774" duration="9526000" />
       <workItem from="1585261601883" duration="2202000" />
-      <workItem from="1585284720157" duration="2146000" />
+      <workItem from="1585284720157" duration="4988000" />
+      <workItem from="1585392482331" duration="119000" />
+      <workItem from="1585392724454" duration="3258000" />
     </task>
     <servers />
   </component>
@@ -296,10 +264,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1584705597693" />
-    <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585160249242">
+    <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585438117266">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1585160249242" />
+    <state x="695" y="323" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1585438117266" />
     <state x="640" y="256" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584650253094">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -325,10 +293,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="334" key="NewPhpClassDialog/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1585168066679" />
-    <state x="461" y="162" key="SettingsEditor" timestamp="1585250793605">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="2204" y="4" key="SettingsEditor" timestamp="1585324317823">
+      <screen x="1920" y="4" width="1280" height="680" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040/1920.4.1280.680@0.0.1920.1040" timestamp="1585250793605" />
+    <state x="2204" y="4" key="SettingsEditor/0.0.1920.1040/1920.4.1280.680@1920.4.1280.680" timestamp="1585324317823" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1584902292635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
