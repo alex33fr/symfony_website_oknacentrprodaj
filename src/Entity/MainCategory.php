@@ -89,7 +89,7 @@ class MainCategory
     {
         if (!$this->subcategory->contains($subcategory)) {
             $this->subcategory[] = $subcategory;
-            $subcategory->setSubcategories($this);
+            $subcategory->setMainCategory($this);
         }
 
         return $this;
@@ -100,8 +100,8 @@ class MainCategory
         if ($this->subcategory->contains($subcategory)) {
             $this->subcategory->removeElement($subcategory);
             // set the owning side to null (unless already changed)
-            if ($subcategory->getSubcategories() === $this) {
-                $subcategory->setSubcategories(null);
+            if ($subcategory->getMainCategory() === $this) {
+                $subcategory->setMainCategory(null);
             }
         }
 

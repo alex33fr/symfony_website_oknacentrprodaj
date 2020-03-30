@@ -25,7 +25,7 @@ class FrontController extends AbstractController
     }
 
     /**
-     * @Route("/{title}", name="mainCategory_show", methods={"GET"})
+     * @Route("category/{title}", name="mainCategory_show", methods={"GET"})
      * @param MainCategory $mainCategory
      * @param MainCategoryRepository $mainCategoryRepository
      * @param SubCategoryRepository $subCategoryRepository
@@ -47,18 +47,6 @@ class FrontController extends AbstractController
         ]);
     }
 
-    /**
-     * @Route("/okna", name="okna_show", methods={"GET"})
-     * @param SubCategoryRepository $subCategoryRepository
-     * @return Response
-     */
-
-    public function okna_show(SubCategoryRepository $subCategoryRepository): Response
-    {
-        return $this->render('front/show_sub_category.html.twig', [
-            'sub_categories' => $subCategoryRepository->findAll(),
-        ]);
-    }
 
     /**
      * @Route("product/{id}", name="show_product", methods={"GET"})
